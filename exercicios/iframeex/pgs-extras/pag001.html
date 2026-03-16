@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Luís | Portfolio</title>
+    <style>
+        *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI, sans-serif;
+}
+
+body{
+background:#0a0a0a;
+color:white;
+}
+
+/* NAVBAR */
+
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:25px 10%;
+
+background:rgba(255,255,255,0.03);
+
+backdrop-filter:blur(10px);
+
+}
+
+.logo{
+
+color:#00ffc3;
+font-weight:bold;
+letter-spacing:2px;
+
+}
+
+nav ul{
+
+display:flex;
+gap:40px;
+list-style:none;
+
+}
+
+/* LINK STYLE */
+
+nav a{
+
+text-decoration:none;
+color:white;
+position:relative;
+
+padding:5px 0;
+
+}
+
+/* UNDERLINE ANIMADA */
+
+nav a::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+bottom:-5px;
+
+width:0;
+height:2px;
+
+background:#00ffc3;
+
+transition:0.4s;
+
+}
+
+nav a:hover::after{
+
+width:100%;
+
+}
+
+/* HERO */
+
+.hero{
+
+height:80vh;
+
+display:flex;
+flex-direction:column;
+
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+.hero h1{
+
+font-size:60px;
+margin-bottom:20px;
+
+}
+
+.hero span{
+
+color:#00ffc3;
+
+}
+
+.hero p{
+
+max-width:600px;
+
+opacity:0.7;
+
+margin-bottom:30px;
+
+}
+
+.btn{
+
+padding:14px 30px;
+
+border:none;
+
+background:#00ffc3;
+
+color:black;
+
+border-radius:30px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+.btn:hover{
+
+transform:scale(1.1);
+
+box-shadow:0 0 20px #00ffc3;
+
+}
+
+/* SECTION */
+
+.section{
+
+padding:100px 10%;
+
+}
+
+.section h2{
+
+margin-bottom:40px;
+
+font-size:32px;
+
+}
+
+/* ABOUT */
+
+.about{
+
+max-width:700px;
+
+line-height:1.7;
+
+opacity:0.8;
+
+}
+
+/* CARDS */
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:30px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,0.03);
+
+padding:30px;
+
+border-radius:15px;
+
+transition:0.3s;
+
+border:1px solid rgba(255,255,255,0.05);
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+border:1px solid #00ffc3;
+
+}
+
+/* FOOTER */
+
+footer{
+
+text-align:center;
+
+padding:40px;
+
+opacity:0.6;
+
+}
+    </style>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">LUÍS</div>
+
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">sobre</a></li>
+        <li><a href="#">favoritos</a></li>
+        <li><a href="#">contato</a></li>
+      </ul>
+    </nav>
+
+    <header class="hero">
+      <h1>oi, eu sou <span>luís</span></h1>
+
+      <p>
+        estudante de tecnologia que gosta de criar coisas na internet, explorar
+        design e aprender programação.
+      </p>
+
+      <button class="btn">explorar</button>
+    </header>
+
+    <section class="section">
+      <h2>quem sou eu</h2>
+
+      <div class="about">
+        <p>
+          Meu nome é Luís. Sou interessado em tecnologia, desenvolvimento web e
+          design. Gosto de aprender coisas novas, criar projetos e experimentar
+          ideias na programação. Também curto jogos, música e explorar novas
+          coisas na internet.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>jogos favoritos</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Brawl Stars</h3>
+
+          <p>jogo competitivo rápido e divertido.</p>
+        </div>
+
+        <div class="card">
+          <h3>Minecraft</h3>
+
+          <p>criatividade infinita e exploração.</p>
+        </div>
+
+        <div class="card">
+          <h3>Terraria</h3>
+
+          <p>aventura, progressão e bosses.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>álbuns favoritos</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>album 1</h3>
+
+          <p>um dos meus favoritos.</p>
+        </div>
+
+        <div class="card">
+          <h3>album 2</h3>
+
+          <p>músicas marcantes.</p>
+        </div>
+
+        <div class="card">
+          <h3>album 3</h3>
+
+          <p>som que gosto bastante.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 luís</p>
+    </footer>
+  </body>
+</html>

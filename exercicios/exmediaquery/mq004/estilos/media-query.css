@@ -25,7 +25,7 @@ grandes telas: acima de 1200px
         content: 'essa impressão foi feita por rafael pagotti de lima';
         text-decoration: overline;
     }
-
+}
 @media screen and (min-width: 768px) and (max-width: 991px){
     body{
         background-image: url("../imgs/back-tablet.jpg");
@@ -39,7 +39,7 @@ grandes telas: acima de 1200px
 
 @media screen and (min-width: 992px) and (max-width: 2000px){
     body{
-        background-image: url('../imgs/back-pc.jpg');  
+        background-image: url('../imgs/back-pc.jpg');
     }
         img#cll{ display: none; }
         img#tblt{ display: none; }
@@ -57,5 +57,4 @@ grandes telas: acima de 1200px
         img#print{ display: none; }
         img#pc{ display: none; }
         img#tv{ display: block; }
-}
 }

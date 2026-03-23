@@ -1,0 +1,26 @@
+ * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      @media (orientation: portrait) {
+        body {
+          background: url("imgs/cev-portrait.jpg");
+          background-size: cover;
+          background-position: center;
+        }
+      }
+
+      @media (orientation: landscape) {
+        body {
+          background: url("imgs/cev-landscape.jpg");
+          background-position: center;
+        }
+      }

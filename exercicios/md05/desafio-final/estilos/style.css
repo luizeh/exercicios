@@ -23,11 +23,21 @@
   --fundo-card: #ffffff;
 }
 
+body.escuro{
+  --fundo-principal: #222222;
+  --texto: #ffffff;
+  --texto-inverso: #333333;
+  --destaque: #c2c2c2;
+  --destaque-inverso: #ffffff;
+  --fundo-card: #444444;
+}
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5em;
   background-color: var(--fundo-principal);
   color: var(--texto);
+  transition: background-color 1s, color 1s;
 }
 
 header {
@@ -200,7 +210,6 @@ article h2 {
 }
 
 .gosto-card h3 {
-  color: var(--destaque);
   margin-bottom: 12px;
   font-size: 1.2em;
 }
@@ -239,8 +248,8 @@ article h2 {
 }
 
 .tag {
-  background-color: var(--destaque-inverso);
-  color: var(--destaque);
+  background-color: var(--destaque);
+  color: var (--texto);
   padding: 6px 14px;
   border-radius: 20px;
   font-size: 0.95em;
